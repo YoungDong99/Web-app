@@ -31,7 +31,6 @@ public class CategoryDAOProvider {
 
     public String insertCategory(CategoryDTO category) {
 
-
         SQL sql = new SQL();
         sql.INSERT_INTO("PRODUCT_CATEGORY")
                 .VALUES("CATEGORY_NAME","#{ categoryName }");
@@ -40,7 +39,6 @@ public class CategoryDAOProvider {
     }
 
     public String updateCategory(CategoryDTO category) {
-
 
         SQL sql = new SQL();
         sql.UPDATE("PRODUCT_CATEGORY")
@@ -51,7 +49,6 @@ public class CategoryDAOProvider {
     }
 
     public String deleteCategory(Map<String, String> parameter) {
-
 
         SQL sql = new SQL();
         sql.DELETE_FROM("PRODUCT_CATEGORY")
