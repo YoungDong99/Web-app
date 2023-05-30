@@ -2,8 +2,6 @@ package com.management;
 
 import com.management.category.view.CategoryMenu;
 import com.management.product.view.ProductMenu;
-
-import java.util.Currency;
 import java.util.Scanner;
 
 public class Application {

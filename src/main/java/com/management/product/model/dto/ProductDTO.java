@@ -2,11 +2,7 @@ package com.management.product.model.dto;
 
 public class ProductDTO {
 
-    // * 주석을 지우고 제품 정보를 담는 객체를 만들 java class를 작성하세요.
-    // * 모든 필드는 String 타입으로 작성하시고, ProductDTO productCompany DB의 'PRODUCT_INFO' 테이블과 매핑 가능해야 합니다.
-    // * DTO 객체에 대하여 기본적으로 작성해야 하는 사항 5가지 항목을 반드시 작성하세요.
-
-    private int product_code;       //제품코드
+    private String product_code;       //제품코드
     private String product_name;    //제품명
     private String origin_cost;        //원가
     private String release_date;    //출시일
@@ -19,7 +15,7 @@ public class ProductDTO {
     public ProductDTO() {
     }
 
-    public ProductDTO(int product_code, String product_name, String origin_cost, String release_date, String discount_rate, String sales_quantity, String stock_quantity, String category_code, String production_status) {
+    public ProductDTO(String product_code, String product_name, String origin_cost, String release_date, String discount_rate, String sales_quantity, String stock_quantity, String category_code, String production_status) {
 
         this.product_code = product_code;
         this.product_name = product_name;
@@ -32,11 +28,11 @@ public class ProductDTO {
         this.production_status = production_status;
     }
 
-    public int getProduct_code() {
+    public String getProduct_code() {
         return product_code;
     }
 
-    public void setProduct_code(int product_code) {
+    public void setProduct_code(String product_code) {
         this.product_code = product_code;
     }
 
@@ -118,4 +114,5 @@ public class ProductDTO {
                 ", production_status='" + production_status + '\'' +
                 '}';
     }
+
 }
